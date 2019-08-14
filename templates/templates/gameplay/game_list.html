@@ -1,0 +1,8 @@
+{% extends "templates/base.html" %}
+
+{% block content %}
+    <div class="well col-sm-6">
+    <h3>All games:</h3>
+    {% include "templates/gameplay/game_list.html" with games_list=object_list %}
+    </div>
+{% endblock %}
